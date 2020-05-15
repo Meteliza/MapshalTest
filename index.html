@@ -143,7 +143,7 @@
           // create a variable for your popup and populate your popup with information from your table
           var popup = new mapboxgl.Popup()
             .setHTML(`<h3>` + row.Name + `</h3>` 
-            + '<h4>' + '<b>' + '外文名: ' + '</b>' + row.Fname + '</h4>' 
+            + '<h4>' + '<i>' + row.Fname + '</i>' + '</h4>' 
             + '<h4>' + '<b>' + '地址: ' + '</b>' + row.Address + '</h4>' 
             + '<h4>' + '<b>' + '描述: ' + '</b>' + row.Des + '</h4>'
             + '<h4>' + '<b>' + '出处: ' + '</b>' + row.Ref + '</h4>' 
@@ -152,7 +152,7 @@
 
           // create a variable for your markup and add it to the map 
           var marker = new mapboxgl.Marker({
-              color: 'purple'
+              color: 'brown'
             })
             .setLngLat([row.Longitude, row.Latitude])
             .setPopup(popup)
