@@ -142,7 +142,12 @@
 
           // create a variable for your popup and populate your popup with information from your table
           var popup = new mapboxgl.Popup()
-            .setHTML(`<h3>` + row.Name + `</h3>` + '<h4>' + '<b>' + 'Address: ' + '</b>' + row.Address + '</h4>' + '<h4>' + '<b>' + 'Phone: ' + '</b>' + row.Phone + '</h4>'); // use the table to populate your popup with text
+            .setHTML(`<h3>` + row.Name + `</h3>` 
+            + '<h4>' + '<b>' + '外文名: ' + '</b>' + row.Fname + '</h4>' 
+            + '<h4>' + '<b>' + '地址: ' + '</b>' + row.Address + '</h4>' 
+            + '<h4>' + '<b>' + '描述: ' + '</b>' + row.Des + '</h4>'
+            + '<h4>' + '<b>' + '出处: ' + '</b>' + row.Ref + '</h4>' 
+            ); // use the table to populate your popup with text
 
 
           // create a variable for your markup and add it to the map 
