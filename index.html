@@ -25,6 +25,62 @@
 
   </head>
   <style>
+    
+h2,
+h3 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.85em;
+  margin: 10px;
+  text-align: left;
+}
+
+/**
+* Set rules for how the map overlays
+* information box will be displayed
+* on the page. */
+
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  margin-right: 20px;
+  font-family: Courier, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+#features {
+  top: 0;
+  height: 200px;
+  margin-top: 20px;
+  width: 350px;
+}
+
+/* Styling your pop-up */
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  font: 400 12px/20px 'Courier', Sans-serif;
+  padding: 2;
+  /*controling transparency and color of pop-up */
+  background-color: rgba(255,255,255,.75);
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 2%;
+}
+
     body {
       background: #404040;
       margin: 0;
